@@ -1,0 +1,38 @@
+{
+  "name": "q-flush",
+  "version": "0.0.1",
+  "description": "Defer and flush Q promise chains on demand, allows sync unit tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/gt test/misc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahmutov/q-flush.git"
+  },
+  "keywords": [
+    "q",
+    "promise",
+    "promises",
+    "flush",
+    "sync",
+    "async",
+    "unit",
+    "test",
+    "testing"
+  ],
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bahmutov/q-flush/issues"
+  },
+  "homepage": "https://github.com/bahmutov/q-flush",
+  "dependencies": {
+    "q": "1.1.2"
+  },
+  "devDependencies": {
+    "gt": "0.8.47",
+    "pre-commit": "1.0.2"
+  },
+  "pre-commit": ["npm test", "npm version"]
+}
